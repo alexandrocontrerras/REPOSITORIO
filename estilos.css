@@ -1,0 +1,62 @@
+/* 
+	
+	*{
+	  (selección universal para todos los tipos)
+	}
+
+ */
+
+
+body{
+	
+	background-color: lightgray;	
+
+}
+
+table{
+	width: 100%;
+	border: 1px solid darkblue;
+	border-collapse: collapse; /*Las lineas se unen en una sola */
+	caption-side: top; /*bottom abajo, top arriba */
+	margin: auto;
+}
+
+th,td{ /* bordes internos de titulos y celdas*/
+	border: 2px solid snow;
+}
+
+th{
+	padding: 15px;
+}
+
+td{
+	padding: 5px;
+	text-align: justify;
+
+}
+
+
+li a{  /* Sólo "a" que están dentro de li */
+
+}
+
+
+/* Para todos los pares en la tabla */
+table tr:nth-child(odd){  
+		background-color: lightcyan;
+}
+
+
+table tr:nth-child(even){
+	background-color: #05E9ED;
+}
+
+tr th{
+	background-color: black;
+	color: white;
+}
+
+ table tr:hover{
+	background-color: green;
+	color: white;
+}
