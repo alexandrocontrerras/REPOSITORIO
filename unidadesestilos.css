@@ -1,0 +1,77 @@
+
+.cpx{
+	background: blue;
+	height: 100px;
+	width: 100px;
+	color: white;
+	margin: 10px;
+}
+
+.cpt{
+	background: blue;
+	height: 100pt;
+	width: 100pt;
+	color: white;
+	margin: 10px;
+}
+
+.cq{
+	background: blue;
+	height: 100q;
+	width: 100q;
+	color: white;
+margin: 10px;
+}
+
+.ccm{
+	background: blue;
+	height: 10cm;
+	width: 10cm;
+	color: white;
+margin: 10px;
+}
+
+.cin{
+	background: blue;
+	height: 5in;
+	width: 5in;
+	color: white;
+	margin: 10px;
+}
+
+.cem{
+	background: red;
+	height: 100cem;
+	width: 10cem;
+	color: white;
+	margin: 10px;
+}
+
+.cvw
+{
+
+	background: red;
+	height: 30vw;
+	width: 30vw;
+	color: white;
+	margin: 10px;
+}
+
+.cvh{
+	background: red;
+	height: 30vh;
+	width: 30vh;
+	color: white;
+	margin: 10px;
+}
+
+.cpor{
+	background: red;
+	height: 30%;
+	width: 30%;
+	color: white;
+	margin: 10px;
+}
+
+
+
