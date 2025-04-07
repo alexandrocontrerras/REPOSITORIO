@@ -1,0 +1,104 @@
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  
+}
+
+h1{
+	font-size: 1.5em;
+	
+}
+
+nav{
+	
+	
+
+	
+	
+
+}
+
+
+nav ul {
+  
+  overflow: hidden; /* Limpiamos errores de float */
+
+}
+
+nav ul li {
+ float: left;
+
+
+  
+}
+
+
+li a{
+	text-decoration: none;
+	color: white;
+	margin-inline: 4px;
+	background-color:#591C21;
+	border-radius: 4px;
+	padding:10px;
+	font-size: .6em;
+
+
+	display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  	padding: 20px;
+  	text-decoration: none;
+}
+
+li a:hover{
+	margin-inline: 4px;
+	color: #591C21;
+	background-color:white;
+	border-radius: 4px;
+	padding:20px;
+	cursor: pointer;
+	font-size: .7em;
+}
+
+td{
+	background-color: black;
+	border: 8px solid darkred;
+}
+
+
+
+.conten{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tex{
+	margin-right: 50px;
+}
+
+.imagen{
+	width: 400px;
+	height: 300px;
+}
+
+@media(max-width: 500px){
+
+	nav ul li {
+ 
+
+}
+li a{
+	text-decoration: none;
+	color: white;	
+	background-color:#591C21;
+	border-radius: 4px;
+	font-size: .6em;
+	display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  	
+  	
+}
+
+}
