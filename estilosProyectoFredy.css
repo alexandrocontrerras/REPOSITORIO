@@ -1,0 +1,198 @@
+
+#mostrar{
+	display: none;
+}
+
+
+
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  
+  
+  
+}
+
+h1{
+	font-size: 1.5em;
+	
+	
+}
+
+h3{
+	color: black;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+
+
+
+nav ul {
+  
+  overflow: hidden; /* Limpiamos errores de float */
+  
+
+}
+
+nav ul li {
+ float: left;
+ 
+
+  
+}
+
+
+li a{
+	text-decoration: none;
+	color: white;
+	margin-inline: 4px;
+	background-color:#591C21;
+	border-radius: 4px;
+	padding:10px;
+	
+	font-size: .6em;
+
+
+	display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  	padding: 20px;
+  	text-decoration: none;
+}
+
+li a:hover{
+	margin-inline: 4px;
+	color: #591C21;
+	background-color:white;
+	border-radius: 4px;
+	padding:20px;
+	cursor: pointer;
+	
+	font-size: .65em;
+}
+
+td{
+	background-color: black;
+	border: 8px solid darkred;
+}
+
+.redes td{
+	
+	border: none;
+	width: 25%;
+	background-color: white;
+	border-radius: 10px;
+	
+}
+
+.conten{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+
+.contenido{
+	display: flex;
+	flex-direction: space-between;
+	flex: 1;
+	
+	
+}
+
+.bloque1{
+	border: 1px solid lightgray;
+	margin: 15px;
+	padding: 20px;
+	flex: 1;
+	box-shadow: 5px 5px rgba(255, 255, 255, 0.857); /* (rojo, verde, azul, opacidad)*/
+	border-radius: 8px;
+}
+
+
+.preguntas{
+		
+	color: black;
+	background-color: white;
+	width: 80%;
+	font-size: 1.2em;
+	border: 6px solid gray;
+	border-radius: 10px;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 2px;
+	
+}
+
+
+.respuesta{
+	width: 80%; 
+	background-color: rgba(0, 0, 255, 0.403);
+	color: white;  
+	font-size: 1.2em;	
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+	border: 2px dashed rgba(0, 0, 255, 0.403);
+	
+}
+
+
+
+.preguntas h3{
+	color: black;
+}
+
+.tex{
+	margin-right: 50px;
+}
+
+.imagen{
+	width: 400px;
+	height: 300px;
+}
+
+
+@media(max-width:500px){
+	
+	nav ul{
+		display: flex;
+		text-align: center;
+	}
+	
+	li a{
+		padding: 10px;
+		font-size: 12px;
+		
+	
+	}
+	
+	li a:hover{
+		padding: 10px;
+		font-size: 12px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	.contenido{
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+	
+ 
+
+
+
+
