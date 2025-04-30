@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operaciones con JavaScript</title>
+	<script type="text/javascript" src="operaciones.js"></script>
+
+	<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>OPERACIONES</h1>
+	</header>
+	<form class="funo" style="border: 6px solid darkblue; padding: 15px; border-radius: 8px; background-color: rgb(202, 238, 242);">
+		<label for="num1"><h2>Escribe un número</h2></label>
+		<input type="text" name="num1" id="num1" placeholder="Escribe un número"></br>
+
+		<label for="num2"><h2>Escribe un número</h2></label>
+		<input type="text" name="num2" id="num2" placeholder="Escribe un número"></br></br>
+
+
+		<input type="button" name="suma" id="suma" value="SUMA" onclick="sumar()">
+
+		<input type="button" name="resta" id="resta" value="RESTA" onclick="restar()">
+
+		<input type="button" name="division" id="division" value="DIVISIÓN" onclick="dividir()">
+
+		<input type="button" name="multiplicacion" id="multiplicacion" value="MULTIPLICAR" onclick="multiplicar()">
+
+
+
+	</form>
+	<form class="fdos"
+		style="border: 6px solid rgb(135, 0, 0); padding: 15px; margin-top: 15px; border-radius: 8px; background-color: rgb(242, 202, 219);">
+		<h2>El resultado es: </h2>
+		<div class="resultadom">
+			<p name="resultado" id="resultado"></p>
+		</div>
+
+	</form>
+
+</body>
+
+</html>
