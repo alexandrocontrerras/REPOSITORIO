@@ -1,0 +1,103 @@
+
+.fcompleto{
+	background-color: sandybrown;
+	width: 60%;
+	justify-content: center;
+	margin: auto;
+	padding: 15px;
+	border-radius: 10px;
+	
+	
+}
+
+
+
+
+label{
+	font-size: 20px;
+}
+
+input[type="radio"] {
+    
+    accent-color: #9ee617; /* Cambia el color del botón (compatible con navegadores modernos) */
+}
+
+input[type="checkbox"] {
+	
+	accent-color: #7700ff; /* Cambia el color del botón (compatible con navegadores modernos) */
+}
+
+
+input[type="text"]{
+	width: 90%;
+	border-radius: 8px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+input[type="password"]{
+	width: 90%;
+	border-radius: 8px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+
+select{
+	width: 90%;
+	border-radius: 8px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+
+header{
+	width: 80%;
+	padding-top: .5px;
+	padding-bottom: .5px;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	border-radius: 9px;
+}
+
+.caja1{
+	width: 90%;
+	border-radius: 8px;
+	text-align: center;
+	border: 8px solid rgb(255, 255, 255);
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+
+.caja2{
+	width: 90%;
+	border-radius: 8px;
+	text-align: center;
+	border: 8px solid rgb(255, 255, 255);
+	padding: 10px;
+	margin: auto;
+	display: block;
+	font-size: 20px;
+	
+}
+
+
+.mdatos{
+	background-color: royalblue;
+	color: white;
+	padding: 15px;
+}
