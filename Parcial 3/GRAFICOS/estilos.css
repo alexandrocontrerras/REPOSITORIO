@@ -1,0 +1,44 @@
+.mdatos{
+	background-color: royalblue;
+	color: white;
+	padding: 2%;
+	width: 76%;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+label[type="radio"]{
+	margin-left: 2%;
+	height: 15px;
+	font-size: large;
+}
+
+.formulario{
+	background-color: lightblue;
+	color: black;
+	padding: 2%;
+	width: 76%;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.boton1:hover{
+	margin-bottom: 10px;
+	color: black;
+	padding: 1%;
+	background-color: white;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.boton1{
+	cursor: pointer;
+	margin-bottom: 10px;
+	color: white;
+	background-color: black;
+	padding: .8%;
+	border-radius: 10px;
+	margin: auto;
+}

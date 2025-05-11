@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="scripts.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+
+
+	<title>FORMULARIO PDF Y GRAFICO</title>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.js"></script>
+
+	<script type="text/javascript" src="jspdf/jspdf.plugin.addimage.js"></script>
+
+	<script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+
+
+
+
+
+
+
+  <!--SCRIPTS DE GRAFICO-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+
+    </script>
+
+</head>
+<body>
+
+
+  
+
+  <div class="contenedor">
+    
+<!--INICIA MITAD1-->
+
+
+
+
+<table id="tinicio" style="width: 80%; margin: auto; height: 100%; background-color: whitesmoke; padding: 5px;">
+  
+  <tr style="width: 100%; margin: auto; background-color: yellow;">
+    
+    <td  id="mitad2" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); display: none;">
+            
+  <div id="formulario" class="formulario" style="background-color: rgb(255, 255, 255); margin: auto; width: 80%; margin-top: 20px; padding: 20px; padding-left: 40px; box-sizing: border-box; border-radius: 10px;">
+
+        <form name="formulario" class="formulario">
+		
+            <label for="user">Nombre de usuario:</label></br></br>
+            <input type="text" name="user" id="user" placeholder="Nombre de usuario"></br></br>
+
+           
+
+            <label for="preguntas">¿Cómo se llama el vaquero de toy story 1? </label></br></br>
+            <input type="radio" name="preguno" id="preguno" value="F">Buzz Lightyear</br>
+            <input type="radio" name="preguno" id="preguno" value="V">Woody</br>
+            <input type="radio" name="preguno" id="preguno" value="F">Zlinky</br>
+            <input type="radio" name="preguno" id="preguno" value="F">Peter</br></br>
+
+
+            <label for="preguntas">¿Cuántas películas hay de los increíbles? </label></br></br>
+            <input type="radio" name="pregdos" id="pregdos" value="F">3</br>
+            <input type="radio" name="pregdos" id="pregdos" value="V">2</br>
+            <input type="radio" name="pregdos" id="pregdos" value="F">1</br>
+            <input type="radio" name="pregdos" id="pregdos" value="F">4</br></br>
+
+            <label for="preguntas">¿Cómo se llama el padre de Nemo? </label></br></br>
+            <input type="radio" name="pregtres" id="pregtres" value="F">Merlin</br>
+            <input type="radio" name="pregtres" id="pregtres" value="F">Liam</br>
+            <input type="radio" name="pregtres" id="pregtres" value="V">Marlin</br>
+            <input type="radio" name="pregtres" id="pregtres" value="F">Logan</br></br>
+
+            <label for="preguntas">Pelicula que trata sobre el espacio en Pixar </label></br></br>
+            <input type="radio" name="pregcuatro" id="pregcuatro" value="V">Wall-E</br>
+            <input type="radio" name="pregcuatro" id="pregcuatro" value="F">Zathura</br>
+            <input type="radio" name="pregcuatro" id="pregcuatro" value="F">Cars</br>
+            <input type="radio" name="pregcuatro" id="pregcuatro" value="F">Interestelar</br></br>
+            
+
+           
+           
+            <div class="boton">
+            <input type="button" name="envio" id="envio" value="obtener datos" onclick="leer();drawChart();generar()">
+            </div>
+
+	      </form>
+
+  </div>
+   
+    <div class="caja2">
+	
+	    <div class="mdatos" id="datos"></div>
+
+    </div>
+      
+    </td>
+    
+    <!--MITAD 1-->
+    <td  id="mitad1" style="width: 50%; background-color: rgb(109, 109, 109);">
+      <div  style="background-color: rgb(0, 0, 0); height: 8%;">
+        <p style="text-align: center; font-size: 4vw; color: white;">Cuestionario de Pixar</p></br>
+      </div>
+
+      <div  style="margin: auto; text-align: center; padding-top: 10px; margin-bottom: 10px;">
+      <button class="boton1" style="font-family: cursive; font-size: 1vw;"   onclick="mostrar_formulario();">INICIAR</button>
+      </div>
+
+
+      
+    </td>
+
+
+
+<!--FILA NUMERO 2-->
+
+  <tr id="fila2" style="width: 100%; margin: auto; padding-top: 30px; background-color: rgb(0, 255, 166);">
+    <td id="celdagrafico" style="width: 100%;  display: none;">
+      <h1>GRAFICO DE RESULTADOS</h1>
+
+     <div id="barchart_material" ></div>
+
+
+    </td>
+
+    
+
+    
+
+
+  </tr>
+
+  <tr>
+    <td id="cajapdf" style="display: none; width: 100%; margin-top: 30px; ">
+      <h1>RESULTADOS EN PDF</h1>
+
+      <div >
+        
+	    <iframe src="" frameboarder="0" width="500" height="600"></iframe>
+      </div>
+
+    </td>
+
+	
+  </tr>
+
+  
+  
+
+</table>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------
+
+  <form name="formulario">
+      
+      <label for="user">Nombre de usuario:</label></br></br>
+      <input type="text" name="user" id="user" placeholder="Nombre de usuario"></br></br>
+  
+      <label for="carrera">¿Cómo se llamaba el vaquero de toy story 1?</label></br></br>
+      <input type="radio" name="puno" id="genero" value="1">Buzz Lightyear</br></br>
+      <input type="radio" name="puno" id="genero" value="2">Woody</br></br>
+      <input type="radio" name="puno" id="genero" value="3">Zlinky</br></br>
+      <input type="radio" name="puno" id="genero" value="4">Peter</br></br>
+
+
+      <label for="carrera">¿Cuántas películas hay de los increíbles?</label></br></br>
+      <input type="radio" name="pdos" id="genero" value="1">2</br></br>
+      <input type="radio" name="pdos" id="genero" value="2">3</br></br>
+      <input type="radio" name="pdos" id="genero" value="3">1</br></br>
+      <input type="radio" name="pdos" id="genero" value="4">4</br></br>
+
+      <label for="carrera">¿Cómo se llama el padre de Nemo?</label></br></br>
+      <input type="radio" name="pdos" id="genero" value="1">Merlin</br></br>
+      <input type="radio" name="pdos" id="genero" value="2">Liam</br></br>
+      <input type="radio" name="pdos" id="genero" value="3">Marlin</br></br>
+      <input type="radio" name="pdos" id="genero" value="4">Logan</br></br>
+
+      <label for="carrera">¿Pelicula que trata sobre el espacio en Pixar?</label></br></br>
+      <input type="radio" name="pdos" id="genero" value="1">Wall-E</br></br>
+      <input type="radio" name="pdos" id="genero" value="2">Zathura</br></br>
+      <input type="radio" name="pdos" id="genero" value="3">Cars</br></br>
+      <input type="radio" name="pdos" id="genero" value="4">Interestelar</br></br>
+  
+      
+
+      <div class="boton">
+      <input type="button" name="envio" id="envio" value="obtener datos" onclick="leer()">
+      </div>
+  
+    </form>--------------------------------------------------->
