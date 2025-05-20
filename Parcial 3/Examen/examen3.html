@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EXAMEN PARCIAL 3</title>
+	<script type="text/javascript" src="scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="encabezado">EXAMEN PARCIAL 3</h1>
+
+	</header>
+
+	<div class="contenedor1">
+		<form class="formulario">
+			<label><h2>Pago de estacionamiento</h2></label></br>
+
+			<div class="preguntas1"> 
+			<label for="Phora">Horas de estacionamiento</label></br></br>
+			<input type="number" name="nhoras" onclick=" ocultar()" id="nhoras" required ></br></br>
+
+			<label for="Pauto">Tipo de auto</label></br></br>
+			<select name="tauto" id="tauto" onclick=" ocultar()"  required> <!--El required solo me funcionó con type"submit" en vez de button-->
+				<option value=""></option>
+				<option value="chico">Auto chico</option>
+				<option value="camioneta">Camioneta</option>
+				<option value="camion">Camión</option>
+			</select></br></br>
+
+			
+
+			</div>
+			<div class="cajaboton">
+			<input class="boton" type="button" name="pagar" value="Calcular Total a pagar" onclick="calcular()"></br></br>
+			</div>
+		</form>
+
+	</div>
+
+		<div class="resultadom" id="resultadom">
+			<h3>TOTAL A PAGAR: </h3>
+			<div name="resultado" id="resultado"></div>
+		</div>
+
+
+</body>
+</html>

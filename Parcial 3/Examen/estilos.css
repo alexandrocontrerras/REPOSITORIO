@@ -1,0 +1,148 @@
+.encabezado{
+	text-align: center;
+	
+	color: darkblue;
+}
+
+
+.contenedor1{
+	margin: auto;
+	width: 82%;
+	
+	text-align: center;
+}
+
+.formulario{
+width: 80%;
+margin: auto;
+background-color: white;
+border: 4px solid darkblue;
+border-radius: 8px;
+box-shadow: 2px 2px 5px black;
+
+
+}
+
+.preguntas1{
+	text-align: left;
+	padding-left: 20px;
+}
+
+
+
+label[for="Phora"]{
+	color: darkblue;
+	font-size: 20px;
+}
+
+
+input[name="nhoras"]{
+	width: 60%;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid darkblue;
+	margin-bottom: 25px;
+	box-shadow: 2px 2px 5px black;
+}
+input[name="nhoras"]:focus{
+	cursor: pointer;
+	width: 60%;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid darkblue;
+	margin-bottom: 25px;
+	transition: 1s;
+	
+	
+}
+
+input[name="nhoras"]:focus{
+	box-shadow: 2px 2px 10px black;
+	transition: .2s;
+	
+}
+
+label[for="Pauto"]{
+	color: darkblue;
+	font-size: 20px;
+}
+
+select[name="tauto"]{
+	width: 60%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid darkblue;
+	margin-bottom: 25px;
+	box-shadow: 2px 2px 5px black;
+}
+
+select[name="tauto"]:hover{
+	cursor: pointer;
+	width: 60%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid darkblue;
+	margin-bottom: 25px;
+	transition: .5s;
+	
+}
+
+select[name="tauto"]:focus{
+	box-shadow: 2px 2px 10px black;
+	transition: .2s;
+}
+
+
+.cajaboton{
+	text-align: center;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 3%;
+	width: 80%;
+
+	display: flex;
+}
+
+.boton{
+	background-color: darkblue;
+	margin: auto;
+	height: 90%;
+	width: 95%;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 2px 2px 5px black;
+	
+}
+
+.boton:hover{
+	background-color: darkblue;
+	height: 90%;
+	margin: 5px;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 2px 2px 10px black;
+}
+
+.resultadom{
+	display: none;
+	
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(249, 31, 7);
+	box-shadow: 2px 2px 5px rgb(255, 0, 0);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
